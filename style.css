@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4fff6;
+  color: #1a1a1a;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 8%;
+  background: white;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0f3d2e;
+  font-weight: 600;
+}
+
+.nav-btn {
+  background: #1db954;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: url("../assets/images/hero-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 8%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.85);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+}
+
+.uk-badge {
+  background: #0f3d2e;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.hero h1 span {
+  color: #1db954;
+}
+
+.hero-visual {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  width: 280px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.primary {
+  background: #1db954;
+  color: white;
+}
+
+.secondary {
+  border: 2px solid #1db954;
+  color: #1db954;
+}
+
+/* SERVICES */
+.services {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* ABOUT */
+.about {
+  background: #eafff0;
+  padding: 80px 8%;
+  text-align: center;
+}
+
+/* REVIEWS */
+.reviews {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.review {
+  display: none;
+  font-size: 1.1rem;
+}
+
+.review.active {
+  display: block;
+}
+
+/* CONTACT */
+.contact {
+  background: #1db954;
+  color: white;
+  text-align: center;
+  padding: 70px 8%;
+}
+
+/* FOOTER */
+footer {
+  background: #0f3d2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #25d366;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+/* ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+  }
